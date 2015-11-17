@@ -26,6 +26,9 @@
 		3669D3EF1BFB9CC900A8C463 /* libswresample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3669D3E51BFB9CC900A8C463 /* libswresample.a */; };
 		3669D3F01BFB9CC900A8C463 /* libswscale.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3669D3E61BFB9CC900A8C463 /* libswscale.a */; };
 		3669D3F11BFB9CC900A8C463 /* libx264.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3669D3E71BFB9CC900A8C463 /* libx264.a */; };
+		3669D3F31BFB9E5D00A8C463 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3669D3F21BFB9E5D00A8C463 /* libz.tbd */; };
+		3669D3F51BFB9E6F00A8C463 /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3669D3F41BFB9E6F00A8C463 /* libbz2.tbd */; };
+		3669D3F71BFB9E7600A8C463 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3669D3F61BFB9E7600A8C463 /* libiconv.tbd */; };
 		D3FEFABBA1EFC1A60841332D /* libPods-FFmpegOpencvSpike.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9074DB6CE0290C9EE3F00FF9 /* libPods-FFmpegOpencvSpike.a */; };
 /* End PBXBuildFile section */
 
@@ -169,6 +172,9 @@
 		3669D3E51BFB9CC900A8C463 /* libswresample.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libswresample.a; sourceTree = "<group>"; };
 		3669D3E61BFB9CC900A8C463 /* libswscale.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libswscale.a; sourceTree = "<group>"; };
 		3669D3E71BFB9CC900A8C463 /* libx264.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libx264.a; sourceTree = "<group>"; };
+		3669D3F21BFB9E5D00A8C463 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		3669D3F41BFB9E6F00A8C463 /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
+		3669D3F61BFB9E7600A8C463 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
 		9074DB6CE0290C9EE3F00FF9 /* libPods-FFmpegOpencvSpike.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FFmpegOpencvSpike.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		92CABAF15B6DF1D11A752424 /* Pods-FFmpegOpencvSpike.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FFmpegOpencvSpike.release.xcconfig"; path = "Pods/Target Support Files/Pods-FFmpegOpencvSpike/Pods-FFmpegOpencvSpike.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -178,6 +184,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3669D3F71BFB9E7600A8C463 /* libiconv.tbd in Frameworks */,
+				3669D3F51BFB9E6F00A8C463 /* libbz2.tbd in Frameworks */,
+				3669D3F31BFB9E5D00A8C463 /* libz.tbd in Frameworks */,
 				D3FEFABBA1EFC1A60841332D /* libPods-FFmpegOpencvSpike.a in Frameworks */,
 				3669D3EA1BFB9CC900A8C463 /* libavfilter.a in Frameworks */,
 				3669D3F01BFB9CC900A8C463 /* libswscale.a in Frameworks */,
@@ -494,6 +503,9 @@
 		64F90F56AEC325FFD25391B2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3669D3F61BFB9E7600A8C463 /* libiconv.tbd */,
+				3669D3F41BFB9E6F00A8C463 /* libbz2.tbd */,
+				3669D3F21BFB9E5D00A8C463 /* libz.tbd */,
 				9074DB6CE0290C9EE3F00FF9 /* libPods-FFmpegOpencvSpike.a */,
 			);
 			name = Frameworks;
