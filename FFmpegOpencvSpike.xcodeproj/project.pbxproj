@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		3669D2C51BFB6A2E00A8C463 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3669D2C41BFB6A2E00A8C463 /* AppDelegate.swift */; };
-		3669D2C71BFB6A2E00A8C463 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3669D2C61BFB6A2E00A8C463 /* ViewController.swift */; };
 		3669D2CA1BFB6A2E00A8C463 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3669D2C81BFB6A2E00A8C463 /* Main.storyboard */; };
 		3669D2CC1BFB6A2E00A8C463 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3669D2CB1BFB6A2E00A8C463 /* Assets.xcassets */; };
 		3669D2CF1BFB6A2E00A8C463 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3669D2CD1BFB6A2E00A8C463 /* LaunchScreen.storyboard */; };
 		3669D2DA1BFB6A2E00A8C463 /* FFmpegOpencvSpikeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3669D2D91BFB6A2E00A8C463 /* FFmpegOpencvSpikeTests.swift */; };
 		3669D2E51BFB6A2E00A8C463 /* FFmpegOpencvSpikeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3669D2E41BFB6A2E00A8C463 /* FFmpegOpencvSpikeUITests.swift */; };
+		3669D2F61BFB884000A8C463 /* libjpeg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3669D2F51BFB884000A8C463 /* libjpeg.a */; };
+		3669D2F91BFB88E600A8C463 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3669D2F81BFB88E600A8C463 /* ViewController.swift */; };
+		3669D2FD1BFB8A5600A8C463 /* CVConverters.m in Sources */ = {isa = PBXBuildFile; fileRef = 3669D2FC1BFB8A5600A8C463 /* CVConverters.m */; };
+		D3FEFABBA1EFC1A60841332D /* libPods-FFmpegOpencvSpike.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9074DB6CE0290C9EE3F00FF9 /* libPods-FFmpegOpencvSpike.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		259AA673E906B57ADCA6F844 /* Pods-FFmpegOpencvSpike.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FFmpegOpencvSpike.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FFmpegOpencvSpike/Pods-FFmpegOpencvSpike.debug.xcconfig"; sourceTree = "<group>"; };
 		3669D2C11BFB6A2E00A8C463 /* FFmpegOpencvSpike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FFmpegOpencvSpike.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3669D2C41BFB6A2E00A8C463 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3669D2C61BFB6A2E00A8C463 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3669D2C91BFB6A2E00A8C463 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3669D2CB1BFB6A2E00A8C463 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3669D2CE1BFB6A2E00A8C463 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +50,12 @@
 		3669D2E01BFB6A2E00A8C463 /* FFmpegOpencvSpikeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FFmpegOpencvSpikeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3669D2E41BFB6A2E00A8C463 /* FFmpegOpencvSpikeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FFmpegOpencvSpikeUITests.swift; sourceTree = "<group>"; };
 		3669D2E61BFB6A2E00A8C463 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3669D2F51BFB884000A8C463 /* libjpeg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libjpeg.a; sourceTree = "<group>"; };
+		3669D2F81BFB88E600A8C463 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3669D2FC1BFB8A5600A8C463 /* CVConverters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CVConverters.m; sourceTree = "<group>"; };
+		3669D2FE1BFB8A8400A8C463 /* FFmpegOpencvSpike-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FFmpegOpencvSpike-Bridging-Header.h"; sourceTree = "<group>"; };
+		9074DB6CE0290C9EE3F00FF9 /* libPods-FFmpegOpencvSpike.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FFmpegOpencvSpike.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		92CABAF15B6DF1D11A752424 /* Pods-FFmpegOpencvSpike.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FFmpegOpencvSpike.release.xcconfig"; path = "Pods/Target Support Files/Pods-FFmpegOpencvSpike/Pods-FFmpegOpencvSpike.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +63,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3FEFABBA1EFC1A60841332D /* libPods-FFmpegOpencvSpike.a in Frameworks */,
+				3669D2F61BFB884000A8C463 /* libjpeg.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +92,8 @@
 				3669D2D81BFB6A2E00A8C463 /* FFmpegOpencvSpikeTests */,
 				3669D2E31BFB6A2E00A8C463 /* FFmpegOpencvSpikeUITests */,
 				3669D2C21BFB6A2E00A8C463 /* Products */,
+				D43A05CDA24B861DD2F1A200 /* Pods */,
+				64F90F56AEC325FFD25391B2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,8 +110,11 @@
 		3669D2C31BFB6A2E00A8C463 /* FFmpegOpencvSpike */ = {
 			isa = PBXGroup;
 			children = (
+				3669D2FE1BFB8A8400A8C463 /* FFmpegOpencvSpike-Bridging-Header.h */,
+				3669D2FA1BFB8A2F00A8C463 /* Helpers */,
+				3669D2F71BFB889C00A8C463 /* ViewControllers */,
+				3669D2F21BFB880600A8C463 /* Vendor */,
 				3669D2C41BFB6A2E00A8C463 /* AppDelegate.swift */,
-				3669D2C61BFB6A2E00A8C463 /* ViewController.swift */,
 				3669D2C81BFB6A2E00A8C463 /* Main.storyboard */,
 				3669D2CB1BFB6A2E00A8C463 /* Assets.xcassets */,
 				3669D2CD1BFB6A2E00A8C463 /* LaunchScreen.storyboard */,
@@ -125,6 +141,63 @@
 			path = FFmpegOpencvSpikeUITests;
 			sourceTree = "<group>";
 		};
+		3669D2F21BFB880600A8C463 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				3669D2F31BFB880600A8C463 /* ffmpeg */,
+				3669D2F41BFB880600A8C463 /* opencv */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		3669D2F31BFB880600A8C463 /* ffmpeg */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ffmpeg;
+			sourceTree = "<group>";
+		};
+		3669D2F41BFB880600A8C463 /* opencv */ = {
+			isa = PBXGroup;
+			children = (
+				3669D2F51BFB884000A8C463 /* libjpeg.a */,
+			);
+			path = opencv;
+			sourceTree = "<group>";
+		};
+		3669D2F71BFB889C00A8C463 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3669D2F81BFB88E600A8C463 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		3669D2FA1BFB8A2F00A8C463 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3669D2FC1BFB8A5600A8C463 /* CVConverters.m */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		64F90F56AEC325FFD25391B2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9074DB6CE0290C9EE3F00FF9 /* libPods-FFmpegOpencvSpike.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D43A05CDA24B861DD2F1A200 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				259AA673E906B57ADCA6F844 /* Pods-FFmpegOpencvSpike.debug.xcconfig */,
+				92CABAF15B6DF1D11A752424 /* Pods-FFmpegOpencvSpike.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +205,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3669D2E91BFB6A2E00A8C463 /* Build configuration list for PBXNativeTarget "FFmpegOpencvSpike" */;
 			buildPhases = (
+				78A9B80FFA09D050931A1F33 /* Check Pods Manifest.lock */,
 				3669D2BD1BFB6A2E00A8C463 /* Sources */,
 				3669D2BE1BFB6A2E00A8C463 /* Frameworks */,
 				3669D2BF1BFB6A2E00A8C463 /* Resources */,
+				95D1AF8FAC65FBA431A8D485 /* Embed Pods Frameworks */,
+				57E9CD8B6DB79896E63D7399 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -251,12 +327,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		57E9CD8B6DB79896E63D7399 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FFmpegOpencvSpike/Pods-FFmpegOpencvSpike-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		78A9B80FFA09D050931A1F33 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		95D1AF8FAC65FBA431A8D485 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FFmpegOpencvSpike/Pods-FFmpegOpencvSpike-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3669D2BD1BFB6A2E00A8C463 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3669D2C71BFB6A2E00A8C463 /* ViewController.swift in Sources */,
+				3669D2F91BFB88E600A8C463 /* ViewController.swift in Sources */,
+				3669D2FD1BFB8A5600A8C463 /* CVConverters.m in Sources */,
 				3669D2C51BFB6A2E00A8C463 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -397,23 +522,40 @@
 		};
 		3669D2EA1BFB6A2E00A8C463 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 259AA673E906B57ADCA6F844 /* Pods-FFmpegOpencvSpike.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = FFmpegOpencvSpike/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FFmpegOpencvSpike/Vendor/opencv",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.bearch.FFmpegOpencvSpike;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FFmpegOpencvSpike/FFmpegOpencvSpike-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		3669D2EB1BFB6A2E00A8C463 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92CABAF15B6DF1D11A752424 /* Pods-FFmpegOpencvSpike.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = FFmpegOpencvSpike/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FFmpegOpencvSpike/Vendor/opencv",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.bearch.FFmpegOpencvSpike;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FFmpegOpencvSpike/FFmpegOpencvSpike-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -484,6 +626,7 @@
 				3669D2EB1BFB6A2E00A8C463 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3669D2EC1BFB6A2E00A8C463 /* Build configuration list for PBXNativeTarget "FFmpegOpencvSpikeTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +635,7 @@
 				3669D2EE1BFB6A2E00A8C463 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3669D2EF1BFB6A2E00A8C463 /* Build configuration list for PBXNativeTarget "FFmpegOpencvSpikeUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +644,7 @@
 				3669D2F11BFB6A2E00A8C463 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
