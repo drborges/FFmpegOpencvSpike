@@ -3,6 +3,21 @@
 
 @implementation CVConverters : NSObject
 
++ (cv::Mat) cvMatFromAVFrame: (AVFrame *) frame
+{
+    AVFrame dst;
+    cv::Mat m;
+    
+    memset(&dst, 0, sizeof(dst));
+    
+    int w = frame->width, h = frame->height;
+    m = cv::Mat(h, w, CV_8UC3);
+    dst.data[0] = (uint8_t *)m.data;
+    
+    avpicture_fill( (AVPicture *)&dst, dst.data[0], PIX_FMT_BGR24, w, h);
+    return m;
+}
+
 + (cv::Mat) cvMatFromUIImage: (UIImage *) image
 {
     CGColorSpaceRef colorSpace = CGImageGetColorSpace(image.CGImage);
