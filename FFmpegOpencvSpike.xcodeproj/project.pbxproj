@@ -15,7 +15,7 @@
 		3669D2E51BFB6A2E00A8C463 /* FFmpegOpencvSpikeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3669D2E41BFB6A2E00A8C463 /* FFmpegOpencvSpikeUITests.swift */; };
 		3669D2F61BFB884000A8C463 /* libjpeg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3669D2F51BFB884000A8C463 /* libjpeg.a */; };
 		3669D2F91BFB88E600A8C463 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3669D2F81BFB88E600A8C463 /* ViewController.swift */; };
-		3669D2FD1BFB8A5600A8C463 /* CVConverters.m in Sources */ = {isa = PBXBuildFile; fileRef = 3669D2FC1BFB8A5600A8C463 /* CVConverters.m */; };
+		3669D2FD1BFB8A5600A8C463 /* CVConverters.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3669D2FC1BFB8A5600A8C463 /* CVConverters.mm */; };
 		D3FEFABBA1EFC1A60841332D /* libPods-FFmpegOpencvSpike.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9074DB6CE0290C9EE3F00FF9 /* libPods-FFmpegOpencvSpike.a */; };
 /* End PBXBuildFile section */
 
@@ -52,8 +52,9 @@
 		3669D2E61BFB6A2E00A8C463 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3669D2F51BFB884000A8C463 /* libjpeg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libjpeg.a; sourceTree = "<group>"; };
 		3669D2F81BFB88E600A8C463 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3669D2FC1BFB8A5600A8C463 /* CVConverters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CVConverters.m; sourceTree = "<group>"; };
+		3669D2FC1BFB8A5600A8C463 /* CVConverters.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CVConverters.mm; sourceTree = "<group>"; };
 		3669D2FE1BFB8A8400A8C463 /* FFmpegOpencvSpike-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FFmpegOpencvSpike-Bridging-Header.h"; sourceTree = "<group>"; };
+		3669D2FF1BFB8C4000A8C463 /* CVConverters.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CVConverters.h; sourceTree = "<group>"; };
 		9074DB6CE0290C9EE3F00FF9 /* libPods-FFmpegOpencvSpike.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FFmpegOpencvSpike.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		92CABAF15B6DF1D11A752424 /* Pods-FFmpegOpencvSpike.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FFmpegOpencvSpike.release.xcconfig"; path = "Pods/Target Support Files/Pods-FFmpegOpencvSpike/Pods-FFmpegOpencvSpike.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -176,7 +177,8 @@
 		3669D2FA1BFB8A2F00A8C463 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				3669D2FC1BFB8A5600A8C463 /* CVConverters.m */,
+				3669D2FC1BFB8A5600A8C463 /* CVConverters.mm */,
+				3669D2FF1BFB8C4000A8C463 /* CVConverters.h */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -381,7 +383,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3669D2F91BFB88E600A8C463 /* ViewController.swift in Sources */,
-				3669D2FD1BFB8A5600A8C463 /* CVConverters.m in Sources */,
+				3669D2FD1BFB8A5600A8C463 /* CVConverters.mm in Sources */,
 				3669D2C51BFB6A2E00A8C463 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
