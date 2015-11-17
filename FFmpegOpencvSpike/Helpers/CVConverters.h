@@ -2,8 +2,16 @@
 #define CVConverters_h
 
 #import <UIKit/UIKit.h>
-#import <libavcodec/avcodec.h>
+
+/*
+ * Since we have C (ffmpeg) and C++ (opencv) dependencies
+ * we need to include the C dependencies within an extern block
+ */
 #import <opencv2/core/core.hpp>
+
+extern "C" {
+#import <libavcodec/avcodec.h>
+}
 
 @interface CVConverters : NSObject
 

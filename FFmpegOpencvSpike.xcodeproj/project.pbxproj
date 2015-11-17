@@ -175,6 +175,9 @@
 		3669D3F21BFB9E5D00A8C463 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		3669D3F41BFB9E6F00A8C463 /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
 		3669D3F61BFB9E7600A8C463 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		3669D3F81BFBA17A00A8C463 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		3669D3FA1BFBA18800A8C463 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		3669D3FC1BFBA24E00A8C463 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		9074DB6CE0290C9EE3F00FF9 /* libPods-FFmpegOpencvSpike.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FFmpegOpencvSpike.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		92CABAF15B6DF1D11A752424 /* Pods-FFmpegOpencvSpike.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FFmpegOpencvSpike.release.xcconfig"; path = "Pods/Target Support Files/Pods-FFmpegOpencvSpike/Pods-FFmpegOpencvSpike.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -190,6 +193,7 @@
 				D3FEFABBA1EFC1A60841332D /* libPods-FFmpegOpencvSpike.a in Frameworks */,
 				3669D3EA1BFB9CC900A8C463 /* libavfilter.a in Frameworks */,
 				3669D3F01BFB9CC900A8C463 /* libswscale.a in Frameworks */,
+				3669D3E81BFB9CC900A8C463 /* libavcodec.a in Frameworks */,
 				3669D3ED1BFB9CC900A8C463 /* libfaac.a in Frameworks */,
 				3669D2F61BFB884000A8C463 /* libjpeg.a in Frameworks */,
 				3669D3EB1BFB9CC900A8C463 /* libavformat.a in Frameworks */,
@@ -197,7 +201,6 @@
 				3669D3EF1BFB9CC900A8C463 /* libswresample.a in Frameworks */,
 				3669D3E91BFB9CC900A8C463 /* libavdevice.a in Frameworks */,
 				3669D3EE1BFB9CC900A8C463 /* libpostproc.a in Frameworks */,
-				3669D3E81BFB9CC900A8C463 /* libavcodec.a in Frameworks */,
 				3669D3F11BFB9CC900A8C463 /* libx264.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -503,6 +506,9 @@
 		64F90F56AEC325FFD25391B2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3669D3FC1BFBA24E00A8C463 /* libc++.tbd */,
+				3669D3FA1BFBA18800A8C463 /* AVFoundation.framework */,
+				3669D3F81BFBA17A00A8C463 /* AVKit.framework */,
 				3669D3F61BFB9E7600A8C463 /* libiconv.tbd */,
 				3669D3F41BFB9E6F00A8C463 /* libbz2.tbd */,
 				3669D3F21BFB9E5D00A8C463 /* libz.tbd */,
@@ -846,6 +852,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 259AA673E906B57ADCA6F844 /* Pods-FFmpegOpencvSpike.debug.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				ENABLE_BITCODE = NO;
@@ -862,10 +869,40 @@
 					"$(PROJECT_DIR)/FFmpegOpencvSpike/Vendor/opencv",
 					"$(PROJECT_DIR)/FFmpegOpencvSpike/Vendor/ffmpeg/lib",
 				);
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-l\"stdc++\"",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"Accelerate\"",
+					"-framework",
+					"\"AssetsLibrary\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreImage\"",
+					"-framework",
+					"\"CoreMedia\"",
+					"-framework",
+					"\"CoreVideo\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"opencv2\"",
+					"$(inherited)",
+					"-lavcodec",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.bearch.FFmpegOpencvSpike;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "FFmpegOpencvSpike/FFmpegOpencvSpike-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VALID_ARCHS = "armv7 armv7s arm64";
 			};
 			name = Debug;
 		};
@@ -873,6 +910,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 92CABAF15B6DF1D11A752424 /* Pods-FFmpegOpencvSpike.release.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				ENABLE_BITCODE = NO;
@@ -889,9 +927,39 @@
 					"$(PROJECT_DIR)/FFmpegOpencvSpike/Vendor/opencv",
 					"$(PROJECT_DIR)/FFmpegOpencvSpike/Vendor/ffmpeg/lib",
 				);
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-l\"stdc++\"",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"Accelerate\"",
+					"-framework",
+					"\"AssetsLibrary\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreImage\"",
+					"-framework",
+					"\"CoreMedia\"",
+					"-framework",
+					"\"CoreVideo\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"opencv2\"",
+					"$(inherited)",
+					"-lavcodec",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.bearch.FFmpegOpencvSpike;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "FFmpegOpencvSpike/FFmpegOpencvSpike-Bridging-Header.h";
+				VALID_ARCHS = "armv7 armv7s arm64";
 			};
 			name = Release;
 		};
